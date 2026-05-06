@@ -1,0 +1,59 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "token_parsing (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/token_parsing",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build: token_parsing"
+    },
+    {
+      "name": "rule_of_three (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/rule_of_three",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build: rule_of_three"
+    },
+    {
+      "name": "token_parsing (Linux)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/token_parsing",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "build: token_parsing",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "rule_of_three (Linux)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/rule_of_three",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "build: rule_of_three",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
