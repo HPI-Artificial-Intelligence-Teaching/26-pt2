@@ -58,7 +58,7 @@ int main()
 
             // Convert the accumulated string to a float.
             // std::stof throws std::invalid_argument if the string is not a
-            // valid number (e.g. "3..14"), and std::out_of_range if it
+            // valid number (e.g. "."), and std::out_of_range if it
             // overflows — always catch these at the boundary where user
             // input enters the program.
             try
@@ -69,6 +69,10 @@ int main()
             catch (const std::invalid_argument&)
             {
                 std::cout << "  invalid number token: \"" << token << "\"" << std::endl;
+            }
+            catch (const std::exception& e)
+            {
+                std::cout << "error: " << e.what() << std::endl;
             }
         }
         else

@@ -67,7 +67,8 @@ struct Fixed
     Fixed& operator=(const Fixed& other)
     {
         // Guard against self-assignment (e.g. `a = a`):
-        // without this, we'd free our own memory and then read from it.
+        // without this, with more complex data structures such as a linked list, 
+        // we'd have to free our own memory and then read from it.
         if (this == &other)
             return *this;
 
@@ -119,5 +120,6 @@ int main()
     // demo_broken();
 
     demo_fixed();
+    std::cout << "\nEnd of main, destructors will run now." << std::endl;
     return 0;
 }
