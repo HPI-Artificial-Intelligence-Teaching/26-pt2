@@ -1,0 +1,50 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build: rule_of_five",
+      "type": "shell",
+      "command": "make",
+      "args": ["rule_of_five"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build: generic_iteration",
+      "type": "shell",
+      "command": "make",
+      "args": ["generic_iteration"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build: array_return",
+      "type": "shell",
+      "command": "make",
+      "args": ["array_return"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build: static_const_cache",
+      "type": "shell",
+      "command": "make",
+      "args": ["static_const_cache"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build: callable_member",
+      "type": "shell",
+      "command": "make",
+      "args": ["callable_member"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "group": "build",
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

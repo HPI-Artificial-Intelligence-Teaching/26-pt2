@@ -1,0 +1,140 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "rule_of_five (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/rule_of_five",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build: rule_of_five"
+    },
+    {
+      "name": "rule_of_five (Linux)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/rule_of_five",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "build: rule_of_five",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "generic_iteration (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/generic_iteration",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build: generic_iteration"
+    },
+    {
+      "name": "generic_iteration (Linux)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/generic_iteration",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "build: generic_iteration",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "array_return (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/array_return",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build: array_return"
+    },
+    {
+      "name": "array_return (Linux)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/array_return",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "build: array_return",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "static_const_cache (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/static_const_cache",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build: static_const_cache"
+    },
+    {
+      "name": "static_const_cache (Linux)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/static_const_cache",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "build: static_const_cache",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
+      "name": "callable_member (macOS)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/callable_member",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "build: callable_member"
+    },
+    {
+      "name": "callable_member (Linux)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/callable_member",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "preLaunchTask": "build: callable_member",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
