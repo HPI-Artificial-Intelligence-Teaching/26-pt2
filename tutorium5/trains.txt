@@ -1,0 +1,6 @@
+Hamburg,Berlin,Frankfurt
+Berlin,Leipzig,Hamburg
+Leipzig,Stuttgart
+Frankfurt,Stuttgart,Paris
+Stuttgart,Berlin,Wien
+Paris,Frankfurt
